@@ -1,41 +1,42 @@
 <head>
     <title id="Title1">Form Filling</title>
     <link rel="stylesheet" href="index.css" />
-  </head>
-  
-  <form id="form1">
-    <label for="name">Name</label>
-    <input type="text" id="name" placeholder="Enter your name" />
-  
-    <label for="email">Email</label>
-    <input type="email" id="email" placeholder="Enter your Email" />
-  
-    <label for="password">Password</label>
-    <input type="password" id="password" placeholder="Enter your Password" />
-  
-    <label for="dob">Date Of Birth</label>
-    <input type="date" id="dob" />
-  
-      <label for="terms" style="display: flex; align-items: center; margin-top: 10px;">
-          Accept Terms and Conditions
-          <input type="checkbox" id="terms" style="margin-left: 10px;">
-      </label>
-      
-    <button type="submit">Submit</button>
-  </form>
-  
-  <table id="user-entries" class="user-entries">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Password</th>
-            <th>Dob</th>
-            <th>Accepted Terms?</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
-</table>
+</head>
+<body>
+    <form id="form1">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
 
-<script src="index.js"></script>
-  
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your Password" required />
+
+        <label for="dob">Date Of Birth</label>
+        <input type="date" id="dob" required />
+
+        <label for="terms" style="display: flex; align-items: center; margin-top: 10px;">
+            Accept Terms and Conditions
+            <input type="checkbox" id="terms" style="margin-left: 10px;" required>
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="user-entries" class="user-entries">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Dob</th>
+                <th>Accepted Terms?</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
