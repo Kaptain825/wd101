@@ -1,28 +1,30 @@
-<head> 
+<head>
     <title id="Title1">Form Filling</title>
-    <link rel="stylesheet" href="form.css">
-</head>
-
-<form id="form1">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  
+  <form id="form1">
     <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-    <label for="Email">Email</label>
-    <input type="email" id="Email" name="Email" placeholder="Enter your Email" required>
-
-    <label for="Password">Password</label>
-    <input type="password" id="Password" name="Password" placeholder="Enter your Password" required>
-
+    <input type="text" id="name" placeholder="Enter your name" />
+  
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter your Email" />
+  
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your Password" />
+  
     <label for="dob">Date Of Birth</label>
-    <input type="date" id="dob" name="dob" placeholder="Enter Date Of Birth" required>
-
-    <label for="checkbox">Accept Terms and Service</label>
-    <input type="checkbox" id="checkbox" name="checkbox">
-
-    <button type="submit" onclick="alert('Form Submitted!')">Submit</button>
-</form>
-
-<table id="user-entries" class = "user-entries">
+    <input type="date" id="dob" />
+  
+      <label for="terms" style="display: flex; align-items: center; margin-top: 10px;">
+          Accept Terms and Conditions
+          <input type="checkbox" id="terms" style="margin-left: 10px;">
+      </label>
+      
+    <button type="submit">Submit</button>
+  </form>
+  
+  <table id="user-entries" class="user-entries">
     <thead>
         <tr>
             <th>Name</th>
@@ -32,10 +34,8 @@
             <th>Accepted Terms?</th>
         </tr>
     </thead>
-
-    <tbody>
-    </tbody>
+    <tbody></tbody>
 </table>
 
-<script src="form.js"></script>
-
+<script src="index.js"></script>
+  
