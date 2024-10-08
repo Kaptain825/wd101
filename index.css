@@ -2,54 +2,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.form1 {
+  }
+  
+  #form1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 400px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 50px;
-    margin: 20px auto; /* Center the form */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #fff; /* White background */
-}
-
-.Title1 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-label {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  label {
     margin-bottom: 5px;
-}
-
-input {
-    margin-bottom: 20px; 
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-    font-size: 16px; 
-}
-
-button {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    margin-bottom: 15px;
     padding: 10px;
-    background-color: #007bff; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .terms {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px; 
-    cursor: pointer; 
-    font-size: 16px; 
-}
-
-button:hover {
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
     background-color: #0056a3;
-}
-
-.user-entries{
-    border: 1px solid #000;
+  }
+  
+  .user-entries {
+    border-collapse: collapse;
     width: 100%;
-}
+    margin-top: 20px;
+  }
+  
+  .user-entries th,
+  .user-entries td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .user-entries th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+
+  
